@@ -110,6 +110,10 @@ router_chain = LLMRouterChain.from_llm(llm, router_prompt)
 chain = MultiPromptChain(router_chain=router_chain, destination_chains=destination_chains, default_chain=default_chain,
                          verbose=True)
 
+import langchain
+
+langchain.debug = True
+
 ##chain.run("what is 1+1 ?")
 result = chain.run("first world war start from which year ?")
 print(result)
