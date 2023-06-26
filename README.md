@@ -1,2 +1,1 @@
-# LearningLangChain
-Learn from LangChain
+This is langchain learning code
